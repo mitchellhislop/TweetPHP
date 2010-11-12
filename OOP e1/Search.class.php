@@ -1,12 +1,4 @@
 <?
-$dirs = DOC_INC."libraries/zend-gdata";
-ini_set("include_path", ini_get('include_path').":{$dirs}");
-require_once DOC_INC.'libraries/zend-gdata/Zend/Loader.php';
-Zend_Loader::loadClass('Zend_Gdata_YouTube');
-Zend_Loader::loadClass('Zend_Gdata_AuthSub');
-Zend_Loader::loadClass('Zend_Gdata_App_Exception');
-
-class Search extends NonArchivedTable
 {	
 	public function __construct($id_search)
 	{
